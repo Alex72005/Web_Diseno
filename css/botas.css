@@ -7,7 +7,6 @@
     --color-acento: #FFD700;
     --color-blanco: #FFFFFF;
     --color-gris: #1A1F25;
-    --color-texto-nav: #111;
 }
 
 * {
@@ -128,6 +127,7 @@ body {
     justify-content: center;
     gap: 30px;
     list-style: none;
+    margin-left: 50px;
 }
 
 .subnav a {
@@ -141,44 +141,23 @@ body {
     color: var(--color-secundario);
 }
 
-/* EQUIPOS POPULARES */
-.equipos {
-    background-color: var(--color-primario);
-    padding: 40px 60px;
-    text-align: center;
+/* HERO / BANNER DESTACADO */
+.hero {
+    position: relative;
 }
 
-.equipos h2 {
-    font-size: 22px;
-    margin-bottom: 30px;
-    color: var(--color-acento);
-    text-align: left;
-}
-
-.logos-grid {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
-    justify-items: center;
-    align-items: center;
-}
-
-.logos-grid img {
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
     filter: brightness(0.9);
+    display: block;
 }
 
-.logos-grid img:hover {
-    transform: scale(1.1);
-    filter: brightness(1);
-}
-
-.logos-grid p {
-    font-size: 13px;
-    margin-top: 6px;
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
     color: var(--color-texto);
 }
 
