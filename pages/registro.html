@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Football Legacy</title>
+    <link rel="stylesheet" href="../css/registro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="register-page">
+        <div class="register-box">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Football Legacy Logo">
+                <h1>Football<br>Legacy</h1>
+            </div>
+
+            <h2><i class="fa-solid fa-user-plus"></i> Crear Cuenta</h2>
+
+            <form id="registerForm">
+                <!-- Datos personales -->
+                <div class="input-group">
+                    <label for="name">Nombre completo</label>
+                    <input type="text" id="name" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" placeholder="ejemplo@email.com" required>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm">Repetir contraseña</label>
+                    <input type="password" id="confirm" placeholder="********" required>
+                </div>
+
+                <!-- Dirección -->
+                <h3>Dirección de envío</h3>
+
+                <div class="input-group">
+                    <label for="address">Calle y número</label>
+                    <input type="text" id="address" placeholder="Calle Mayor 45" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="city">Ciudad</label>
+                    <input type="text" id="city" placeholder="Madrid" required>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group small">
+                        <label for="postal">Código Postal</label>
+                        <input type="text" id="postal" placeholder="28013" required>
+                    </div>
+
+                    <div class="input-group small">
+                        <label for="country">País</label>
+                        <input type="text" id="country" placeholder="España" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-register">Registrarse</button>
+
+                <p class="login-text">
+                    ¿Ya tienes cuenta?
+                    <a href="login.html">Inicia sesión</a>
+                </p>
+
+                <a href="../index.html" class="volver">
+                    <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+                </a>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

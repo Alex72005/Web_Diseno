@@ -131,7 +131,6 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    margin-top: 15px;
 }
 
 .imagenes img {
@@ -144,6 +143,8 @@ body {
 
 .detalles {
     max-width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .detalles h2 {
@@ -156,9 +157,16 @@ body {
     font-size: 23px;
     font-weight: bold;
     color: var(--color-texto);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
+.precio .antes {
+    text-decoration: line-through;
+    color: var(--color-acento);
+    margin-right: 6px;
+    opacity: 0.8;
+}
+    
 /* TALLAS */
 .tallas button {
     background: var(--color-gris);
