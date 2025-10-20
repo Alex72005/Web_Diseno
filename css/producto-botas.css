@@ -128,14 +128,14 @@ body {
 }
 
 .imagenes {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
 }
 
 .imagenes img {
-    width: 350px;
-    height: 450px;
+    width: 300px;
+    height: 300px;
     border-radius: 10px;
     object-fit: cover;
     background-color: var(--color-gris);
@@ -149,7 +149,6 @@ body {
 
 .detalles h2 {
     font-size: 25px;
-    margin-bottom: 15px;
     color: var(--color-texto);
 }
 
@@ -166,15 +165,21 @@ body {
     margin-right: 6px;
     opacity: 0.8;
 }
-    
+
 /* TALLAS */
+.tallas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px 12px;
+}
+
 .tallas button {
     background: var(--color-gris);
     color: var(--color-texto);
     border: 1px solid #333;
     border-radius: 4px;
-    margin-right: 12px;
-    padding: 8px 25px;
+    padding: 8px 0;
+    /* el grid ajusta el ancho automáticamente */
     cursor: pointer;
     transition: all 0.3s;
 }
