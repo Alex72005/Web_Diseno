@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botas Fútbol</title>
-    <link rel="stylesheet" href="../css/botas.css">
+    <title>Carrito | Football Legacy</title>
+    <link rel="stylesheet" href="../css/carrito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -24,78 +24,69 @@
 
         <div class="icons">
             <a href="login.html"><i class="fa-regular fa-user"></i></a>
-            <a href="favoritos.html"><i class="fa-regular fa-heart"></i></a>
+            <a href="favoritos.html" class="active"><i class="fa-regular fa-heart"></i></a>
             <a href="carrito.html"><i class="fa-solid fa-bag-shopping"></i></a>
         </div>
     </header>
 
-    <!-- NAV PRINCIPAL -->
+    <!-- NAV -->
     <nav class="navbar">
         <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="camisetas.html">Camisetas</a></li>
-            <li><a href="botas.html" class="active">Botas Fútbol</a></li>
+            <li><a href="botas.html">Botas Fútbol</a></li>
             <li><a href="">Contacto</a></li>
             <li><a href="">Sobre Nosotros</a></li>
         </ul>
     </nav>
 
-    <!-- SUBNAV MARCAS -->
-    <nav class="subnav">
-        <ul>
-            <li><a href="">Adidas</a></li>
-            <li><a href="">Nike</a></li>
-            <li><a href="">Puma</a></li>
-            <li><a href="">Under Armour</a></li>
-            <li><a href="">Skechers</a></li>
-            <li><a href="">New Balance</a></li>
-        </ul>
-    </nav>
+    <section class="carrito">
+        <h2><i class="fa-solid fa-bag-shopping"></i>Tu Carrito</h2>
 
-    <!-- BANNER -->
-    <section class="hero">
-        <img src="../img/botas.webp" alt="Adidas Coral Blaze Pack">
-    </section>
+        <div class="carrito-contenedor">
+            <!-- Producto en el carrito -->
+            <div class="carrito-item">
+                <a href="producto_camisetas/united2007-08.html" class="link-producto"></a>
+                <img src="../img/camisetas/united2008-atras.png" alt="Camiseta Ronaldo">
+                <div class="info">
+                    <p class="titulo">2007–08 Manchester United Final UCL<br><strong>Ronaldo 7</strong></p>
+                    <p class="precio"><span>90€</span></p>
+                    <div class="cantidad">
+                        <button class="menos">−</button>
+                        <input type="text" value="1">
+                        <button class="mas">+</button>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <i class="fa-solid fa-trash eliminar"></i>
+                </div>
+            </div>
 
-    <!-- PRODUCTOS -->
-    <section class="productos">
-        <div class="grid">
-            <div class="item">
+            <div class="carrito-item">
                 <a href="producto_botas/adidas-predator-jude.html" class="link-producto"></a>
-                <div class="fav-icon">
-                    <i class="fa-regular fa-heart"></i>
+                <img src="../img/botas/adidas-predator-jude/adidas-predator-jude-fuera.png" alt="Botas Bellingham">
+                <div class="info">
+                    <p class="titulo">Adidas Predator League FT FG/MG <br><strong>Jude Bellingham</strong></p>
+                    <p class="precio">100€</p>
+                    <div class="cantidad">
+                        <button class="menos">−</button>
+                        <input type="text" value="1">
+                        <button class="mas">+</button>
+                    </div>
                 </div>
-                <img src="../img/botas/adidas-predator-jude/adidas-predator-jude-fuera.png" alt="Botas F50 League">
-                <p>Adidas Predator League FT FG/MG <br><strong>Jude Bellingham</strong></p>
-                <span class="precio">100€</span>
-            </div>
-            <div class="item">
-                <a href="producto_botas/adidas-predator-pro.html" class="link-producto"></a>
-                <div class="fav-icon">
-                    <i class="fa-regular fa-heart"></i>
+                <div class="acciones">
+                    <i class="fa-solid fa-trash eliminar"></i>
                 </div>
-                <img src="../img/botas/adidas-predator-pro/adidas-predator-pro-fuera.png" alt="Botas Predator">
-                <p>Adidas Predator Pro FT FG</p>
-                <span class="precio">160€</span>
             </div>
-            <div class="item">
-                <a href="producto_botas/adidas-copa-pure-III.html" class="link-producto"></a>
-                <div class="fav-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <img src="../img/botas/adidas-copa-pure-III/adidas-copa-pure-III-fuera.png" alt="Botas Copa Pure">
-                <p>Adidas Copa Pure III Pro FG</p>
-                <span class="precio">150€</span>
-            </div>
-            <div class="item">
-                <a href="producto_botas/adidas-copa-mundial.italia.html" class="link-producto"></a>
-                <div class="fav-icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <img src="../img/botas/adidas-copa-mundial-italia/adidas-copa-mundial-italia-fuera.png" alt="Botas Copa Mundial">
-                <p>Adidas Copa Mundial Italia</p>
-                <span class="precio"><span class="antes">180€</span> 80€</span>
-            </div>
+        </div>
+
+        <!-- RESUMEN -->
+        <div class="resumen">
+            <h3>Resumen del pedido</h3>
+            <p>Subtotal: <span>190€</span></p>
+            <p>Envío: <span>5€</span></p>
+            <p class="total">Total: <span>195€</span></p>
+            <button class="btn-pagar">Finalizar compra</button>
         </div>
     </section>
 
@@ -138,7 +129,7 @@
                     <ul class="redes-sociales">
                         <li><a href=""><i class="fa-brands fa-instagram"></i>Instagram</a></li>
                         <li><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-                        <li><a href=""><i class="fa-brands fa-x-twitter"></i>X (Twitter)</a></li>
+                        <li><a href=""><i class="fa-brands fa-x-twitter"></i>X(Twitter)</a></li>
                     </ul>
                 </div>
             </div>
