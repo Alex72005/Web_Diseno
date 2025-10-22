@@ -2,7 +2,7 @@
 
 :root {
     --color-primario: #0D1117;
-    --color-secundario: #00BFFF;
+    --color-secundario: #004C80;
     --color-texto: #F5F5F5;
     --color-acento: #FFD700;
     --color-blanco: #FFFFFF;
@@ -17,6 +17,8 @@
 body {
     background-color: var(--color-primario);
     color: var(--color-texto);
+    margin: 0;
+    padding: 0;
 }
 
 /* HEADER */
@@ -33,6 +35,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    text-decoration: none;
 }
 
 .header .logo img {
@@ -90,7 +93,7 @@ body {
 /* NAV PRINCIPAL */
 .navbar {
     background-color: var(--color-secundario);
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .navbar ul {
@@ -268,10 +271,15 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
+    text-decoration: none;
 }
 
 .footer .logo img {
     width: 80px;
+}
+
+.footer .logo h1 {
+    color: var(--color-texto);
 }
 
 .footer-columns {

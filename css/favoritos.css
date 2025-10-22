@@ -2,7 +2,7 @@
 
 :root {
     --color-primario: #0D1117;
-    --color-secundario: #00BFFF;
+    --color-secundario: #004C80;
     --color-texto: #F5F5F5;
     --color-acento: #FFD700;
     --color-gris: #1A1F25;
@@ -17,7 +17,6 @@
 body {
     background-color: var(--color-primario);
     color: var(--color-texto);
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -35,6 +34,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    text-decoration: none;
 }
 
 .header .logo img {
@@ -92,7 +92,7 @@ body {
 /* NAV */
 .navbar {
     background-color: var(--color-secundario);
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .navbar ul {
@@ -185,17 +185,11 @@ body {
     cursor: pointer;
 }
 
-/* .fav-icon i {
-    color: var(--color-texto);
-    font-size: 16px;
-    transition: color 0.3s ease;
-} */
-
-.fav-icon i a {
+.fav-icon i {
     color: var(--color-acento);
     font-size: 16px;
     transition: color 0.3s ease;
-} 
+}
 
 
 .item:hover .fav-icon {
@@ -238,10 +232,15 @@ body {
     display: flex;
     align-items: center;
     gap: 35px;
+    text-decoration: none;
 }
 
 .footer .logo img {
     width: 80px;
+}
+
+.footer .logo h1 {
+    color: var(--color-texto);
 }
 
 .footer-columns {
